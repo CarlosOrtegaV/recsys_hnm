@@ -3,3 +3,6 @@
 
 *.csv
 *.parquet
+
+# flow execution
+*.metaflow*
