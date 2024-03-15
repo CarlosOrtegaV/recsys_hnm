@@ -1,0 +1,21 @@
+name: recsys
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9.10
+  - pip
+  - metaflow=2.7.14
+  - python-duckdb=0.6.0
+  - pyarrow=9.0.0
+  - notebook=6.4.12
+  - scipy==1.10.0
+  - pip:
+    - dbt-duckdb==1.3.3
+    - nvtabular==1.2.2
+    - merlin-core==0.8.0
+    - merlin-models==0.10.0
+    - tensorflow-gpu==2.10
+    - protobuf>=3.9.2,<3.20
+
+

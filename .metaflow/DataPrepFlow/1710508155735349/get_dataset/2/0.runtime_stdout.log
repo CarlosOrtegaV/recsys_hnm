@@ -1,0 +1,37 @@
+[MFLOG|0|2024-03-15T13:09:16.296176Z|runtime|5e304bda-46ee-4532-a06b-d56ad8b270c1]Fetching rows with query: 
+[MFLOG|0|2024-03-15T13:09:17.576682Z|runtime|9bb860e4-d37d-4900-aa88-e8b116a3211a] 
+[MFLOG|0|2024-03-15T13:09:17.576847Z|runtime|4cdd2fef-92d2-44a9-9ea9-6becb1101c98]            SELECT 
+[MFLOG|0|2024-03-15T13:09:17.576891Z|runtime|f074d864-b85d-4a83-bbb7-a570b2193e23]                ARTICLE_ID,
+[MFLOG|0|2024-03-15T13:09:17.576919Z|runtime|8f48a354-20bf-4dcb-a102-54c084ba791c]                PRODUCT_CODE, 
+[MFLOG|0|2024-03-15T13:09:17.576941Z|runtime|bced232d-e895-4a37-8b2d-f5a6a0ee3058]                PRODUCT_TYPE_NO,
+[MFLOG|0|2024-03-15T13:09:17.576962Z|runtime|fb75f79a-392d-4d7c-95d1-628331fbd032]                PRODUCT_GROUP_NAME,
+[MFLOG|0|2024-03-15T13:09:17.576982Z|runtime|446c997c-ef5e-42a5-9ece-d2e3c7776b30]                GRAPHICAL_APPEARANCE_NO,
+[MFLOG|0|2024-03-15T13:09:17.577013Z|runtime|69890101-4fb9-4657-8934-5936ed68f6aa]                COLOUR_GROUP_CODE,
+[MFLOG|0|2024-03-15T13:09:17.577050Z|runtime|1a184696-9d00-4477-ae3b-76956bcad375]                PERCEIVED_COLOUR_VALUE_ID,
+[MFLOG|0|2024-03-15T13:09:17.577109Z|runtime|fa5ff327-6068-46ff-8960-91f7ad9d5236]                PERCEIVED_COLOUR_MASTER_ID,
+[MFLOG|0|2024-03-15T13:09:17.577159Z|runtime|450505b1-fa19-4513-a607-0d6989935031]                DEPARTMENT_NO,
+[MFLOG|0|2024-03-15T13:09:17.577203Z|runtime|c555c4f8-6896-4e7b-8204-cdca9f7ebd66]                INDEX_CODE,
+[MFLOG|0|2024-03-15T13:09:17.577262Z|runtime|55a48478-8db3-492b-bbbd-fef10ca5c2db]                INDEX_GROUP_NO,
+[MFLOG|0|2024-03-15T13:09:17.577294Z|runtime|d56d298d-22c6-47e9-b862-5db694995a63]                SECTION_NO,
+[MFLOG|0|2024-03-15T13:09:17.577324Z|runtime|5a48fe86-3b0d-455b-bcf5-2e0ce9bc9ea2]                GARMENT_GROUP_NO,
+[MFLOG|0|2024-03-15T13:09:17.577381Z|runtime|9b478c00-d31f-4cd3-8360-e507a7116740]                ACTIVE,
+[MFLOG|0|2024-03-15T13:09:17.577430Z|runtime|051aad4d-6a5a-45f6-9fc3-26955d05b837]                FN,
+[MFLOG|0|2024-03-15T13:09:17.577484Z|runtime|7335267a-32df-45f8-b7e9-6bfbf9ee9035]                AGE,
+[MFLOG|0|2024-03-15T13:09:17.577531Z|runtime|a9660ca7-4179-4706-878c-6516aa242055]                CLUB_MEMBER_STATUS,
+[MFLOG|0|2024-03-15T13:09:17.577587Z|runtime|09c77acf-576c-40e9-94f0-f137978135b5]                CUSTOMER_ID,
+[MFLOG|0|2024-03-15T13:09:17.577640Z|runtime|69852eeb-2e98-4b6f-950b-0ac29399f2bc]                FASHION_NEWS_FREQUENCY,
+[MFLOG|0|2024-03-15T13:09:17.577692Z|runtime|df90f011-74cf-4771-ad84-342958ce3aae]                POSTAL_CODE,
+[MFLOG|0|2024-03-15T13:09:17.577731Z|runtime|2ec40246-5859-4114-929e-6b9ee27c466b]                PRICE,
+[MFLOG|0|2024-03-15T13:09:17.577770Z|runtime|3ac2dc81-e0a4-4fac-8f1a-11ae6ba5cf13]                SALES_CHANNEL_ID,
+[MFLOG|0|2024-03-15T13:09:17.577825Z|runtime|4cbc2f8e-fe00-4800-8b1e-684b8a2d5588]                T_DAT
+[MFLOG|0|2024-03-15T13:09:17.577884Z|runtime|8a9cc237-f8ce-482c-acae-b879bbf2fb06]            FROM
+[MFLOG|0|2024-03-15T13:09:17.577938Z|runtime|9cdf210a-ac72-459e-9dfd-f3ed8e12da83]                read_parquet('filtered_dataframe.parquet')
+[MFLOG|0|2024-03-15T13:09:17.577993Z|runtime|aaf85ced-0cef-4200-a3f9-849ca68aaf70]                USING SAMPLE 1 PERCENT (bernoulli)
+[MFLOG|0|2024-03-15T13:09:17.578032Z|runtime|5b7257ea-30c2-4920-a242-f6dba6c75c01]            ORDER BY
+[MFLOG|0|2024-03-15T13:09:17.578085Z|runtime|70b4e8d7-e943-4b47-8aac-78733579e0c3]                T_DAT ASC
+[MFLOG|0|2024-03-15T13:09:17.578141Z|runtime|39f7d358-6585-4849-ba24-bd88699944dc]         
+[MFLOG|0|2024-03-15T13:09:17.578186Z|runtime|a8d0c1d8-5ece-4633-83c8-49d13cea1f6a]
+[MFLOG|0|2024-03-15T13:09:17.578242Z|runtime|ed396ebb-1903-4ade-b2d1-37841afcf02b]It may take a while...
+[MFLOG|0|2024-03-15T13:09:17.578296Z|runtime|5397e3c0-449c-47fe-9faf-482a1224cbb3]
+[MFLOG|0|2024-03-15T13:09:17.578354Z|runtime|56a300f0-b8f9-426b-9345-297f2a3d6c05]Example row {'article_id': 399223029, 'product_code': 399223, 'product_type_no': 272, 'product_group_name': 'Garment Lower body', 'graphical_appearance_no': 1010023, 'colour_group_code': 9, 'perceived_colour_value_id': 4, 'perceived_colour_master_id': 5, 'department_no': 1772, 'index_code': 'D', 'index_group_no': 2, 'section_no': 57, 'garment_group_no': 1016, 'active': 0.0, 'fn': 0.0, 'age': 30.0, 'club_member_status': 'ACTIVE', 'customer_id': '695bcbc62b0189692fcf8917fd82a3491f86f75742153360445ee1c080fa1ec2', 'fashion_news_frequency': 'NONE', 'postal_code': 'c388b16558321eb03adb1ba7199381654d8d717196ec897ce406949bec3fe52d', 'price': 0.033881355077028275, 'sales_channel_id': 1, 't_dat': datetime.datetime(2018, 9, 20, 0, 0)}
+[MFLOG|0|2024-03-15T13:09:18.048704Z|runtime|73a0bc69-1898-49bb-888d-9a1c018a63be]# 272,789 events in the training set, 2,146 for validation, 2,061 for test
